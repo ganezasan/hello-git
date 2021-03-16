@@ -373,7 +373,7 @@ checkout コマンドを利用してブランチを移動できます。
 ```
 $ git checkout translation/git-test
 ```
-
+
 ## Gitに関する参考資料
 - https://backlog.com/ja/git-tutorial/
 - https://dotinstall.com/lessons/basic_git
