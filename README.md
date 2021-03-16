@@ -116,7 +116,7 @@ $ git config --global user.email "<Your email address>"
 
 ## Gitの基本コマンド
 
-0. Gitの初期化
+### 0. Gitの初期化
 
 Gitの基本コマンドをテストとして実行する場合は、以下のように別ディレクトリを作成し実行してください。
 
@@ -128,7 +128,7 @@ $ git init
 Initialized empty Git repository in /Users/<username>/repos/git-ops/.git/
 ```
 
-1. 変更を確認
+### 1. 変更を確認
 
 現在のブランチ名や変更されたファイルの情報を確認できます。
 
@@ -141,7 +141,7 @@ No commits yet
 nothing to commit (create/copy files and use "git add" to track)
 ```
 
-2. ファイルをコミット
+### 2. ファイルをコミット
 
 GitのコミットとはGit上でファイルの変更を記録する1つの単位です。
 1つのコミットには複数のファイルの変更が含めることができます。
@@ -186,7 +186,7 @@ Date:   Tue Mar 16 11:15:35 2021 +0900
     add README.md
 ```
 
-3. git addの取り消し
+### 3. git addの取り消し
 
 ファイルを修正し、`git add`を実行します。
 
@@ -224,7 +224,7 @@ Changes not staged for commit:
         modified:   README.md
 ```
 
-4. 前回のコミットをコミット前の状態に戻す
+### 4. 前回のコミットをコミット前の状態に戻す
 
 ※ コミットが1つしか無い状態では利用できません。変更は残ったままになります。
 
@@ -232,7 +232,7 @@ Changes not staged for commit:
 $ git reset --soft HEAD^
 ```
 
-5. 新しいブランチを作成し、そのブランチへ移動
+### 5. 新しいブランチを作成し、そのブランチへ移動
 
 ```
 $ git checkout -b <new branch name>
@@ -240,19 +240,19 @@ $ git checkout -b test/checkout
 Switched to a new branch 'test/checkout'
 ```
 
-6. ブランチを移動
+### 6. ブランチを移動
 
 ```
 $ git checkout master
 ```
 
-7. ブランチを削除
+### 7. ブランチを削除
 
 ```
 $ git branch -d test/checkout
 ```
 
-8. Githubのリポジトリへ変更(commit)をpush
+### 8. Githubのリポジトリへ変更(commit)をpush
 
 ```
 $ git push origin <local branch name>:<github branch name>
@@ -261,7 +261,7 @@ $ git push origin test:test/git-ops # localのtestブランチをgithub上のtes
 $ git push origin head # `head`は現在作業中のブランチ名のエイリアスです。現在作業中のブランチ(例えば`test`)をgithub上の現在作業中のブランチ名(`test`)にpushする
 ```
 
-9. 変更の差分を確認
+### 9. 変更の差分を確認
 
 ```
 $ git diff
